@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタルアート</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/App.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center flex-col w-screen h-screen" id="loading">
+        <div class="loading_cube">
+            <div class="cube">
+                <div class="square_top"></div>
+                <div class="square_left"></div>
+                <div class="square_right"></div>
+                <div class="square_bottom"></div>
+                <div class="square_front"></div>
+                <div class="square_back"></div>
+            </div>
+        </div>
+        <div class="loading_bar">
+            <div class="loading_ball"></div>
+        </div>
+        <div class="now_loading">
+            NOW LOADING...
+        </div>
+    </div>
+
+    <div class="hidden after_loading" id="after_loading">
+        <div class="w-full h-screen bubble-background"></div>
+        <div class="background-section">
+            <div class="navbar">
+                <div class="logo text-3xl text-bold">
+                    <a href="index.html">DIGITAL ART</a>
+                </div>
+
+                <button class="burger" aria-label="Toggle menu"> <span class="material-symbols-outlined"
+                        style="font-size: 48px;"></span></button>
+
+                <div class="nav-links">
+                    <div class="dropdown" onMouseOut="this.querySelector('.dropdown-content').style.height='0px';"
+                        onMouseOver="this.querySelector('.dropdown-content').style.height='50px';">
+                        <a href="Method.html">デジタルアートの誕生<span class="material-symbols-outlined">arrow_drop_down
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Method.html">History</a>
+                        </div>
+
+                    </div>
+                    <div class="dropdown" onMouseOut="this.querySelector('.dropdown-content').style.height='0px';"
+                        onMouseOver="this.querySelector('.dropdown-content').style.height='150px';">
+                        <a href="History.html">デジタルアートの発展<span class="material-symbols-outlined">arrow_drop_down
+
+                            </span>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="History.html">Origin</a>
+                            <a href="History.html">Movie History</a>
+                            <a href="History.html">3D Art Development</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" onMouseOut="this.querySelector('.dropdown-content').style.height='0px';"
+                        onMouseOver="this.querySelector('.dropdown-content').style.height='200px';">
+                        <a href="Technology.html">XR<span class="material-symbols-outlined">arrow_drop_down
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Technology.html">What is VR Art?</a>
+                            <a href="Technology.html">Other Devices</a>
+                            <a href="Technology.html">Specific Example</a>
+                            <a href="Technology.html">Mixed Reality</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" onMouseOut="this.querySelector('.dropdown-content').style.height='0px';"
+                        onMouseOver="this.querySelector('.dropdown-content').style.height='200px';">
+                        <a href="Recent.html">最新動向<span class="material-symbols-outlined"> arrow_drop_down</span>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Recent.html">Unusual Movie</a>
+                            <a href="Recent.html">Cost Savings</a>
+                            <a href="Recent.html">Location</a>
+                            <a href="Recent.html">CG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image_container">
+            <video id="video_hero" autoplay loop muted preload="auto" class="degital_1" disablePictureInPicture>
+                <source src="video/hero.mp4" type="video/mp4">
+            </video>
+
+            <div class="web_title">DIGITAL ART</div>
+            <div class="web_by">By groupD</div>
+        </div>
+        <div class="sns-box m-8">
+            <a href="https://twitter.com/intent/tweet?text=デジタルアートの記事を読みました！" class="btn-sns btn-x">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#" class="btn-sns btn-facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                    <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#" class="btn-sns btn-line">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                        d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="menu">
+            <div class="fade_in">
+                <div class="text-white text-center text-2xl font-bold mb-2 lg:text-3xl ">MENU</div>
+                <div class="horizontal_line"> </div>
+            </div>
+            <div class="flex justify-center lg:text-2xl md:text-xl slide_bottom">
+                <ul class="text-left justify-center list-inside mt-3">
+                    <li class="menu_animation"> <a href="#intro_1">1, デジタルアートの誕生</a></li>
+                    <li class="menu_animation"> <a href="#intro_2">2, デジタルアートの発展</a></li>
+                    <li class="menu_animation"> <a href="#intro_3">3, VR</a></li>
+                    <li class="menu_animation"> <a href="#intro_4">4, 最新動向</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ml-5 mr-5 mt-10 mb-10 mx-auto">
+            <div class="items-start flex flex-wrap justify-center">
+                <a href="Method.html">
+                    <div class="flex">
+                        <div class="home_item">
+                            <img src=images/degital_art_item1.jpg alt="digital" />
+                            <p class="new">New</p>
+                            <p class="item_description">デジタルアートの誕生</p>
+                            <div class="horizontal_line"> </div>
+                            <p class="text-center text-white">presented by Kiyo</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="History.html">
+                    <div class="flex">
+                        <div class="home_item">
+                            <img src=images/degital_art_item2.jpg alt="digital" />
+                            <p class="new">New</p>
+                            <p class="item_description">デジタルアートの発展</p>
+                            <div class="horizontal_line"> </div>
+                            <p class="text-center text-white">presented by Hayato</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Technology.html">
+                    <div class="flex">
+                        <div class="home_item">
+                            <img src=images/degital_art_item3.jpg alt="digital" />
+                            <p class="new">New</p>
+                            <p class="item_description">XR</p>
+                            <div class="horizontal_line"> </div>
+                            <p class="text-center text-white">presented by Kazumichi</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Recent.html">
+                    <div class="flex">
+                        <div class="home_item">
+                            <img src=images/degital_art_item4.jpg alt="digital" />
+                            <p class="new">New</p>
+                            <p class="item_description">最新動向</p>
+                            <div class="horizontal_line"> </div>
+                            <p class="text-center text-white">presented by Kira</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="image_container">
+            <img src="images/degital_art_1.jpg" alt="image_header" class="degital_1" />
+            <div class="web_title_2">INTRODUCTION</div>
+            <div class="web_by">groupD</div>
+        </div>
+        <div class="text-white mt-10">
+            <figure class="text-center lg:flex mx-8 mb-16 block lg:justify-center intro_fig_res2" id=intro_1>
+                <img src="images/intro_1.jpg" alt="intro_1" class="intro_1" />
+                <figcaption class="block lg:ml-32 lg:mr-4 leading-10">
+                    <div class="text-2xl my-5 ">テーマの設定理由</div>
+                    <div class="text-left text-lg lg: text-xl leading-10">
+                        デジタルアートはチームラボなどの普段の私たちの生活
+                        <br />
+                        になじみやすい分野だが授業で今まで深く扱っていなか
+                        <br />
+                        ったのでこの機会にどのようにしてデジタルアートが始
+                        <br />
+                        まったのか、現在どのようなところに活用されているの
+                        <br />
+                        か深く調べてみようと思った。
+                    </div>
+                </figcaption>
+
+            </figure>
+            <figure class="text-center  mx-8 mb-16 block lg:flex lg:justify-center intro_fig_res" id=intro_2>
+                <figcaption class="block lg:mr-32 lg:ml-4 leading-10">
+                    <div class="text-2xl my-5">デジタルアートの定義</div>
+                    <div class="text-left text-lg lg: text-xl leading-10">
+                        デジタルアートとは、パソコンやタブレットなどのデジタル
+                        <br />
+                        機器を駆使して作られたアート作品。単に絵画、イラストレ
+                        <br />
+                        ーション、プロジェクションマッピングだけを指すものでは
+                        <br />
+                        なく電子音楽という電子楽器を使って作曲された音楽やVFX
+                        <br />
+                        という映像作品にCGなどを組み込み合成などを作られた作品
+                        <br />
+                        などもデジタルアートと呼ばれる。
+                    </div>
+                </figcaption>
+                <img src="images/intro_2.jpg" alt="intro_2" class="intro_1" />
+
+            </figure>
+        </div>
+        <footer class="footer-area mt-60">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <div class="main">
+                <div class="footer">
+                    <div class="single-footer">
+                        <!--<h4 class="footer-heading"><a href="index.html" class="logo">Digital Art</a></h4>-->
+                        <a href="index.html">
+                            <image src="" width="50px"></image>
+                        </a>
+                        <p>This site is a compilation of articles about "digital art"!
+                        </p>
+                        <a href="index.html" class="read-more">read more <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span></a>
+                    </div>
+                    <div class="single-footer">
+                        <h4 class="menu_animation"><a href="Method.html">誕生</a></h4>
+                        <ul>
+                            <li class="menu_animation"><a href="Method.html"><span class="material-symbols-outlined">
+                                        chevron_right</span>History</a></li>
+                        </ul>
+                    </div>
+                    <div class="single-footer">
+                        <h4><a href="History.html">発展</a></h4>
+                        <ul>
+                            <li class="menu_animation"><a href="History.html"><span class="material-symbols-outlined">
+                                        chevron_right</span>Origin</a></li>
+                            <li class="menu_animation"><a href="History.html"><span class="material-symbols-outlined">
+                                        chevron_right </span>Movie History</a></li>
+                            <li class="menu_animation"><a href="History.html"><span class="material-symbols-outlined">
+                                        chevron_right</span>3D Art Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="single-footer">
+                        <h4><a href="Technology.html">XR</a></h4>
+                        <ul>
+                            <li class="menu_animation"><a href="Technology.html"><span
+                                        class="material-symbols-outlined">
+                                        chevron_right</span>What is VR Art?</a></li>
+                            <li class="menu_animation"><a href="Technology.html"><span
+                                        class="material-symbols-outlined">
+                                        chevron_right </span>Other Devices</a></li>
+                            <li class="menu_animation"><a href="Technology.html"><span
+                                        class="material-symbols-outlined">
+                                        chevron_right</span>Specific Example</a></li>
+                            <li class="menu_animation"><a href="Technology.html"><span
+                                        class="material-symbols-outlined">
+                                        chevron_right</span>Mixed Reality</a></li>
+                        </ul>
+                    </div>
+                    <div class="single-footer">
+                        <h4><a href="Recent.html">最新動向</a></h4>
+                        <ul>
+                            <li class="menu_animation"><a href="Recent.html"><span class="material-symbols-outlined">
+                                        chevron_right</span>Unusual Movie</a></li>
+                            <li class="menu_animation"><a href="Recent.html"><span class="material-symbols-outlined">
+                                        chevron_right </span>Cost Savings</a></li>
+                            <li class="menu_animation"><a href="Recent.html"><span class="material-symbols-outlined">
+                                        chevron_right</span>Location</a></li>
+                            <li class="menu_animation"><a href="Recent.html"><span class="material-symbols-outlined">
+                                        chevron_right</span>CG</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p> Copyright &copy;2024 All rights reserved | made with <span class="material-symbols-outlined">
+                            favorite</span> by Group D</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // メニューの表示状態を切り替
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('open');
+        }
+
+        // scroll時のnavのスタイルを調整
+        function handleScroll() {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("navbar-change");
+            } else {
+                navbar.classList.remove("navbar-change");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const burgerButton = document.querySelector(".burger");
+            if (burgerButton) {
+                burgerButton.addEventListener("click", toggleMenu);
+            }
+            window.addEventListener("scroll", handleScroll);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const videoElement = document.getElementById('video_hero');
+
+            // 0.5倍速
+            videoElement.playbackRate = 0.5;
+
+            // メニューの無効化
+            videoElement.addEventListener("contextmenu", (e) => {
+                e.preventDefault();
+            });
+        });
+
+        window.onload = () => {
+            setTimeout(() => {
+                afterLoading = document.getElementById("after_loading")
+                loading = document.getElementById("loading")
+
+                afterLoading.classList.remove("hidden");
+                loading.classList.add("hidden")
+
+            }, 3000);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const section = document.querySelector('.bubble-background');
+
+            const createBubble = () => {
+                const bubbleEl = document.createElement('span');
+                bubbleEl.className = 'bubble';
+
+                const minSize = 30;
+                const maxSize = 70;
+                const size = Math.random() * (maxSize - minSize) + minSize;
+                bubbleEl.style.width = `${size}px`;
+                bubbleEl.style.height = `${size}px`;
+
+                const leftPosition = Math.random() * (window.innerWidth - size);
+                bubbleEl.style.left = `${leftPosition}px`;
+
+                section.appendChild(bubbleEl);
+
+                setTimeout(() => {
+                    bubbleEl.remove();
+                }, 8000);
+            };
+
+            const bubbleAnimation = () => {
+                createBubble();
+                setTimeout(() => {
+                    requestAnimationFrame(bubbleAnimation);
+                }, 400);
+            };
+
+            requestAnimationFrame(bubbleAnimation);
+        });
+
+
+    </script>
+</body>
+
+</html>
