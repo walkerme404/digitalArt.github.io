@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.background-section {
+    /* background-image: url('wallpaper1.png');
+    /* 背景图片 */
+    /* background-size: cover;
+    background-position: bottom; */
+    position: relative;
+    padding: 0 0 200px;
+    /* 背景容器的上下内边距 */
+    display: flex;
+    align-content: start;
+    z-index: 1000;
+    /*add*/
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: rgba(51, 51, 51, 0.1);
+    color: white;
+    backdrop-filter: blur(2px);
+    /* 背景ぼかし効果 */
+
+    width: 100%;
+    justify-content: space-between;
+
+
+    /* スクロール・グラデーション効果test*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar-change {
+    padding: 10px 8vw;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.logo {
+    margin-left: clamp(10px, 10vw, 15%);
+}
+
+
+.logo img {
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 1vw;
+    flex-shrink: 1;
+
+    white-space: nowrap;
+}
+
+.nav-links {
+    position: relative;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+
+    font-size: clamp(14px, 2vw, 22px);
+    /* 最小14px、最大22px */
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.nav-links .dropdown-content a {
+    font-size: clamp(12px, 1.5vw, 18px);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 中央に配置するために50%左にシフトする */
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+
+.dropdown {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+/* 透明な塗りつぶし領域を追加 */
+.dropdown:hover::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    z-index: 1;
+}
+
+
+.dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.7);
+    top: 115%;
+    left: 0;
+
+    min-width: 180px;
+    width: auto;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    height: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.7s;
+    /*transition: visibility 0.7s, opacity 0.7s ease-in-out;*/
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+
+.burger {
+    display: none;
+    /* デフォルトでは非表示 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burger span::before {
+    content: "menu";
+    transition: all 1s ease;
+}
+
+.navbar.open .burger span::before {
+    content: "close";
+    /* クローズアイコンに切り替える */
+}
+
+@media (max-width: 1200px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 0;
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        height: auto;
+        z-index: 1000;
+    }
+
+    .navbar.open .nav-links {
+        display: flex;
+        /* 点击菜单按钮后显示导航链接 */
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .dropdown-content {
+        left: 100%;
+        top: auto;
+    }
+}

@@ -1,0 +1,16 @@
+@media screen and (max-width: 1024px) {
+    .intro_fig_res{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .intro_fig_res2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.intro_fig_res,.intro_fig_res2{
+    font-family:'Raleway', serif;
+}

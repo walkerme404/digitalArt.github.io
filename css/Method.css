@@ -1,0 +1,366 @@
+.Method_section{
+    overflow:hidden;
+    position:relative;
+    background-color: #35a4ff;
+    }
+    .Method_section::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    pointer-events: none;
+    background-repeat: no-repeat; 
+    background-size: 100% 40px;
+    background-position: 50% 0%;    
+    background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2001 77"><g fill="%23000000"><path opacity=".5" d="M1993 46V24l-19-11-19 11v22l19 11 19-11zM1942 72V60l-10-5-10 5v12l10 5 10-5z"/><path opacity=".75" d="M1961 52V36l-14-8-14 8v16l14 9 14-9zM1969 69v-8l-7-4-6 4v8l6 4 7-4z"/><path opacity=".5" d="M1871 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M1903 52V36l14-8 14 8v16l-14 9-14-9zM1895 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M1855 46V24l-19-11-19 11v22l19 11 19-11zM1803 72V60l-9-5-10 5v12l10 5 9-5z"/><path opacity=".75" d="M1823 52V36l-14-8-14 8v16l14 9 14-9zM1831 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M1733 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M1765 52V36l14-8 14 8v16l-14 9-14-9zM1757 69v-8l6-4 7 4v8l-7 4-6-4z"/><path opacity=".5" d="M1717 46V24l-19-11-19 11v22l19 11 19-11zM1665 72V60l-9-5-10 5v12l10 5 9-5z"/><path opacity=".75" d="M1685 52V36l-14-8-14 8v16l14 9 14-9zM1693 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M1594 46V24l19-11 20 11v22l-20 11-19-11z"/><path opacity=".75" d="M1626 52V36l14-8 15 8v16l-15 9-14-9zM1618 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M1579 46V24l-19-11-20 11v22l20 11 19-11zM1527 72V60l-10-5-9 5v12l9 5 10-5z"/><path opacity=".75" d="M1547 52V36l-14-8-15 8v16l15 9 14-9zM1555 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M1456 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M1488 52V36l14-8 14 8v16l-14 9-14-9zM1480 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M1441 46V24l-20-11-19 11v22l19 11 20-11zM1389 72V60l-10-5-9 5v12l9 5 10-5z"/><path opacity=".75" d="M1408 52V36l-14-8-14 8v16l14 9 14-9zM1416 69v-8l-6-4-7 4v8l7 4 6-4z"/><path opacity=".5" d="M1318 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M1350 52V36l14-8 14 8v16l-14 9-14-9zM1342 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M1302 46V24l-19-11-19 11v22l19 11 19-11zM1251 72V60l-10-5-10 5v12l10 5 10-5z"/><path opacity=".75" d="M1270 52V36l-14-8-14 8v16l14 9 14-9zM1278 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M1180 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M1212 52V36l14-8 14 8v16l-14 9-14-9zM1204 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M1164 46V24l-19-11-19 11v22l19 11 19-11zM1112 72V60l-9-5-10 5v12l10 5 9-5z"/><path opacity=".75" d="M1132 52V36l-14-8-14 8v16l14 9 14-9zM1140 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M1041 46V24l20-11 19 11v22l-19 11-20-11z"/><path opacity=".75" d="M1074 52V36l14-8 14 8v16l-14 9-14-9zM1066 69v-8l6-4 7 4v8l-7 4-6-4z"/><path opacity=".5" d="M1026 46V24l-19-11-20 11v22l20 11 19-11zM974 72V60l-9-5-10 5v12l10 5 9-5z"/><path opacity=".75" d="M994 52V36l-14-8-14 8v16l14 9 14-9zM1002 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M903 46V24l19-11 20 11v22l-20 11-19-11z"/><path opacity=".75" d="M935 52V36l14-8 15 8v16l-15 9-14-9zM927 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M888 46V24l-20-11-19 11v22l19 11 20-11zM836 72V60l-10-5-9 5v12l9 5 10-5z"/><path opacity=".75" d="M856 52V36l-15-8-14 8v16l14 9 15-9zM864 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M765 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M797 52V36l14-8 14 8v16l-14 9-14-9zM789 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M749 46V24l-19-11-19 11v22l19 11 19-11zM698 72V60l-10-5-9 5v12l9 5 10-5z"/><path opacity=".75" d="M717 52V36l-14-8-14 8v16l14 9 14-9zM725 69v-8l-7-4-6 4v8l6 4 7-4z"/><path opacity=".5" d="M627 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M659 52V36l14-8 14 8v16l-14 9-14-9zM651 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M611 46V24l-19-11-19 11v22l19 11 19-11zM560 72V60l-10-5-10 5v12l10 5 10-5z"/><path opacity=".75" d="M579 52V36l-14-8-14 8v16l14 9 14-9zM587 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M489 46V24l19-11 19 11v22l-19 11-19-11z"/><path opacity=".75" d="M521 52V36l14-8 14 8v16l-14 9-14-9zM513 69v-8l7-4 6 4v8l-6 4-7-4z"/><path opacity=".5" d="M473 46V24l-19-11-19 11v22l19 11 19-11zM421 72V60l-9-5-10 5v12l10 5 9-5z"/><path opacity=".75" d="M441 52V36l-14-8-14 8v16l14 9 14-9zM449 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M350 46V24l20-11 19 11v22l-19 11-20-11z"/><path opacity=".75" d="M382 52V36l15-8 14 8v16l-14 9-15-9zM374 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M335 46V24l-19-11-20 11v22l20 11 19-11zM283 72V60l-10-5-9 5v12l9 5 10-5z"/><path opacity=".75" d="M303 52V36l-14-8-14 8v16l14 9 14-9zM311 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M212 46V24l19-11 20 11v22l-20 11-19-11z"/><path opacity=".75" d="M244 52V36l14-8 14 8v16l-14 9-14-9zM236 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M197 46V24l-20-11-19 11v22l19 11 20-11zM145 72V60l-10-5-9 5v12l9 5 10-5z"/><path opacity=".75" d="M164 52V36l-14-8-14 8v16l14 9 14-9zM173 69v-8l-7-4-7 4v8l7 4 7-4z"/><path opacity=".5" d="M74 46V24l19-11 19 11v22L93 57 74 46z"/><path opacity=".3" d="M53 68V54l13-8 13 8v14l-13 8-13-8zM191 68V54l13-8 13 8v14l-13 8-13-8zM330 68V54l13-8 13 8v14l-13 8-13-8zM468 68V54l13-8 13 8v14l-13 8-13-8zM606 68V54l13-8 13 8v14l-13 8-13-8zM744 68V54l13-8 13 8v14l-13 8-13-8zM883 68V54l12-8 13 8v14l-13 8-12-8zM1021 68V54l13-8 13 8v14l-13 8-13-8zM1159 68V54l13-8 13 8v14l-13 8-13-8zM1297 68V54l13-8 13 8v14l-13 8-13-8zM1435 68V54l13-8 13 8v14l-13 8-13-8zM1574 68V54l13-8 12 8v14l-12 8-13-8zM1712 68V54l13-8 13 8v14l-13 8-13-8zM1850 68V54l13-8 13 8v14l-13 8-13-8z"/><path opacity=".75" d="M106 52V36l14-8 14 8v16l-14 9-14-9zM98 69v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".5" d="M58 46V24L39 13 20 24v22l19 11 19-11z"/><path opacity=".75" d="M34 69v-8l-7-4-6 4v8l6 4 7-4z"/><path d="M2001 0v15l-21 12-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14L0 13V0h2001z"/><path opacity=".75" d="M12 28L0 35v19l12 7 14-9V36l-14-8z"/><path opacity=".3" d="M2001 46l-13 8v14l13 8V46z"/></g></svg>'); 
+    }
+    
+    @media (min-width:768px){
+    .Method_section::before{
+    background-size: 100% 62px;
+    background-position: 50% 0%;   
+    }  
+    }
+     
+    @media (min-width:1025px){
+    .Method_section::before{ 
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 97px;
+    background-position: 50% 0%;  
+    }
+    }
+    @media (min-width:2100px){
+    .Method_section::before{
+    background-size: 100% calc(2vw + 97px);
+    }
+    }
+     
+    .temp_h1 {
+        text-align:center;
+        font-size:80px;
+        font-family:'wire one', serif;
+        font-weight:normal;
+    }
+
+    li{
+        font-family:'Raleway', serif;
+        text-align: left;
+        width:100%;
+      }
+    
+    p{
+        font-size:20px;
+        font-family:'Raleway', serif;
+        width:70%;
+        margin: 0 auto;
+      }
+
+      .Method_1{
+        width:30%;
+        height: auto;
+        margin: 30px auto;
+        border-radius: 30px;
+      }
+
+    .transition-content {
+        max-height: 0px; 
+        opacity: 0;
+        overflow: hidden;
+      }
+      
+      .transition-content.visible {
+        animation: fadeInExpand 0.5s ease forwards; 
+      }
+      
+      .transition-content.hidden {
+        animation: fadeOutCollapse 0.5s ease forwards; 
+      }
+      
+      @keyframes fadeInExpand {
+        0% {
+          max-height: 0px;
+          opacity: 0;
+        }
+        100% {
+          max-height: 400px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOutCollapse {
+        0% {
+          max-height: 400px;
+          opacity: 1;
+        }
+        100% {
+          max-height: 0px;
+          opacity: 0;
+        }
+      }
+      
+     
+      .arrow span {
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: #ffffff;
+        position: relative;
+        transform: scale(0, 1);
+        transform-origin: top left;
+        animation: arrow01 2s ease-in-out forwards;
+      }
+      @keyframes arrow01 {
+          0% { transform: scale(0, 1); }
+          30% { transform: scale(0, 1); }
+          40% { transform: scale(1, 1); }
+          85% { transform: scale(1, 1); }
+          90% { transform: scale(1, 1);  }
+          100% { transform: scale(1, 1); opacity: 1; }
+      }
+      .arrow span::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 15px;
+        border-right: 1px solid #ffffff;
+        transform: rotate(-45deg) scale(1, 0);
+        transform-origin: right bottom;
+        position: absolute;
+        bottom: 2px;
+        right: 1px;
+        animation: arrow02 2s ease-in-out forwards;
+      }
+      @keyframes arrow02 {
+          0% { transform: rotate(-45deg) scale(1, 0); }
+          45% { transform: rotate(-45deg) scale(1, 0); }
+          55% { transform: rotate(-45deg) scale(1, 1); }
+          85% { transform: rotate(-45deg) scale(1, 1);}
+          90% { transform: rotate(-45deg) scale(1, 1); }
+          100% { transform: rotate(-45deg) scale(1, 1); opacity: 1; }
+      }
+
+      .supplement{
+        font-size:17px ;
+        margin: 0px 20px;
+        width: 80%;
+      }
+
+      .kakko {
+        padding: 30px;
+        position: relative;
+              text-align: center;
+              color: #ffffff;
+      }
+      .kakko::before {
+        display: block;
+        font: normal normal 6rem 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+        position: absolute;
+        line-height: 0;
+        transform: scaleY(1.2) translateY(13px);
+      }
+      .kakko::before {
+        content: '{';
+        top: 50%;
+        left: 0;
+      }
+
+      .items_container{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .items{
+        width: 900px;
+        height: auto;
+        border-radius: 30px;
+      }
+
+      .item{
+        width:90%;
+        background-color: rgba(255, 255, 255, 0.842);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 30px;
+        transform: translateY(20px);
+        color: rgba(0, 0, 0, 0.717);
+        position: relative;
+        box-shadow: 0 0 6px #2570ae9d;
+        overflow: hidden;
+      }
+
+      .item_content{
+        position: absolute;
+        top:65px;
+        left:50%;
+        transform: translateY(-50%);
+        margin-right: 20px;
+        font-family:'Raleway', serif;
+        font-size: 18px;
+      }
+
+      .year{
+        position: absolute;
+        top:70px;
+        left:2%;
+        transform: translateY(-50%);
+        color: #35a4ff9d;
+        font-weight:bold;
+        font-size: 90px;
+        font-family:'Raleway', serif;
+        opacity: 0.7;
+      }
+
+      .Method_3{
+        position: absolute;
+        width: 80px;
+        top: 65px;
+        left: 46%;
+        transform: translate(-120%,-51%);
+        border-radius: 10px;
+        height: 100px;
+      }
+
+      .timeline_point{
+        background-color:rgb(65, 65, 177);
+        width:60px;
+        height: 60px;
+        z-index: 300;
+        border:6px solid rgb(223, 254, 255);
+        position:relative;
+        transform:translate(0px,0px) rotate(45deg);
+      }
+
+      .timeline_path{
+        width: 8px;
+        background-color: rgb(223, 254, 255);
+        position: absolute;
+        transform: translate(-50%,-50%);
+        z-index: 200;
+        transition: top 0.3s ease, height 0.3s ease;
+      }
+
+      .timeline{
+        margin-right:50px;
+        display: flex;
+        flex-direction: column;
+        gap:90px;
+        height: 100%;
+        position: relative;
+        transform: translateY(70px);
+      }
+
+      .inner_number{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-size: 30px;
+        font-family:'Raleway', serif;
+        font-weight: bold;
+      }
+
+      .item_UI{
+        color:rgba(0, 0, 0, 0.717);
+        position: absolute;
+        bottom:5px;
+        right: 30px;
+        font-size: 25px;
+      }
+
+      .detail_content_1{
+        width:300px;
+        position: absolute;
+        top:140px;
+        left: 100px;
+        border-radius: 10px;
+        
+      }
+
+      .detail_content_2{
+        width: 180px;
+        position: absolute;
+        top:140px;
+        right: 170px;
+        border-radius: 10px;
+      }
+
+      .detail_caption_1{
+        font-family:'Raleway', serif;
+        position:absolute;
+        top:380px;
+        left: 205px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .detail_caption_2{
+        font-family:'Raleway', serif;
+        position:absolute;
+        top:380px;
+        left: 490px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .click_para{
+        position: absolute;
+        bottom:5px;
+        right: 55px;
+        text-align: right;
+        font-weight: bold;
+      }
+
+      .detail_content_3{
+        position: absolute;
+        top:120px;
+        right: 120px;
+        transform: scale(0.8);
+      }
+
+      .detail_content_4{
+        position: absolute;
+        top:220px;
+        right: 50px;
+        font-size: 18px;
+        width: 350px;
+      }
+
+      .detail_content_5{
+        width:300px;
+        position: absolute;
+        top:150px;
+        left: 50px;
+        border-radius: 10px;
+      }
+
+      .height_130{
+        height: 130px;
+        transition: height 0.3s ease;
+      }
+
+      .height_430{
+        transition: height 0.3s ease;
+        height: 430px;
+      }
+
+
+      .height_500{
+        height: 500px;
+        transition: height 0.3s ease;
+      }
+
+      .point_bright{
+        background-color: orange;
+        transition: background-color 0.3s ease;
+      }
